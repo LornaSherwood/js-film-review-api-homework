@@ -10,7 +10,7 @@ filmRouter.get('/', function(req, res){
   res.json(films);
 });
 
-filmRouter.get('/:id', function(req, res){ 
+filmRouter.get('/:id', function(req, res){ // more specific route first
   res.json({data: films[req.params.id]}) 
 })
 
